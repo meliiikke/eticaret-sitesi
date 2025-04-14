@@ -51,6 +51,11 @@ button {
     border: none;
 }
 
+button:disabled {
+    opacity: 0.4 !important;
+    cursor: no-drop;
+}
+
 .btn {
     display: inline-block;
     padding: 0 25px;
@@ -90,7 +95,7 @@ input[type="email"],
 input[type="number"],
 textarea {
     outline: none;
-    border: 1px solid #dee0ea ;
+    border: 1px solid #dee0ea;
     padding: 8px 8px 8px 15px;
 }
 
@@ -99,7 +104,7 @@ input[type="password"]:focus,
 input[type="email"]:focus,
 input[type="number"]:focus,
 textarea:focus {
-    border-color: grey ;
+    border-color: grey;
 }
 
 input[type="number"]::-webkit-inner-spin-button {

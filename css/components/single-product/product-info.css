@@ -169,6 +169,16 @@
     column-gap: 10px;
 }
 
+.site-main .cart-button button {
+    width: 100%;
+}
+
+.site-main .cart-button button:disabled {
+    background-color: darkgreen;
+    color: #fff;
+    border-color: darkgreen;
+}
+
 .site-main .cart-button input {
     width: 80px;
 }

@@ -466,7 +466,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="tab-panel-reviews content" id="reviews">
+                        <div class="tab-panel-reviews content active" id="reviews">
                             <h3>2 reviews for Basic Colored Sweatpants With Elastic Hems</h3>
                             <div class="comments">
                                 <ol class="comment-list">
@@ -476,19 +476,19 @@
                                         </div>
                                         <div class="comment-text">
                                             <ul class="comment-star">
-                                                <li>
+                                                <li class="star">
                                                     <i class="bi bi-star-fill"></i>
                                                 </li>
-                                                <li>
+                                                <li class="star">
                                                     <i class="bi bi-star-fill"></i>
                                                 </li>
-                                                <li>
+                                                <li class="star">
                                                     <i class="bi bi-star-fill"></i>
                                                 </li>
-                                                <li>
+                                                <li class="star">
                                                     <i class="bi bi-star-fill"></i>
                                                 </li>
-                                                <li>
+                                                <li class="star">
                                                     <i class="bi bi-star-fill"></i>
                                                 </li>
                                             </ul>
@@ -548,7 +548,7 @@
                                         <label>
                                             Your Rating <span class="required">*</span>
                                         </label>
-                                        <div class="stars">
+                                        <div class="stars ">
                                             <a href="#" class="star">
                                                 <i class="bi bi-star-fill"></i>
                                             </a>
@@ -578,18 +578,18 @@
                                     </div>
                                     <div class="comment-form-comment form-comment">
                                         <label for="comment">Your Review <span class="required">*</span></label>
-                                        <textarea id="comment" cols="50" rows="10"></textarea>
+                                        <textarea id="comment-text" cols="50" rows="10" required></textarea>
                                     </div>
                                     <div class="comment-form-author form-comment">
                                         <label for="name">Name<span class="required">*</span></label>
-                                        <input id="name" type="text">
+                                        <input id="comment-name" type="text" required>
                                     </div>
                                     <div class="comment-form-email form-comment">
                                         <label for="email">E-mail<span class="required">*</span></label>
                                         <input id="email" type="email">
                                     </div>
                                     <div class="comment-form-cookies">
-                                        <input id="cookies" type="checkbox">
+                                        <input id="cookies" name="cookies" type="checkbox">
                                         <label for="cookies">Save my name, email, and website in this browser for the
                                             next time I comment. <span class="required">*</span></label>
 

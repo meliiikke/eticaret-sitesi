@@ -101,6 +101,10 @@
     color: gold;
 }
 
+.tab-panel-reviews .comment-form-rating .star.active i {
+    color: gold;
+}
+
 
 .tab-panel-reviews .comment-form-rating .stars i {
     font-size: 10px;
@@ -123,7 +127,7 @@
     display: flex;
     font-size: 14px;
     align-items: center;
-    column-gap : 4px;
+    column-gap: 4px;
 }
 
 .comment-form input.submit {

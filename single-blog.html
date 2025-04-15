@@ -29,12 +29,12 @@
             <div class="conteiner">
                 <div class="header-wrapper">
                     <div class="header-mobile">
-                        <i class="bi bi-list"></i>
+                        <i class="bi bi-list" id="btn-menu"></i>
                     </div>
                     <div class="header-left">
-                        <a href="#" class="logo">LOGO</a>
+                        <a href="index.html" class="logo">LOGO</a>
                     </div>
-                    <div class="header-center">
+                    <div class="header-center" id="sidebar">
                         <nav class="navigation">
                             <ul class="menu-list">
                                 <li class="menu-list-item">
@@ -193,21 +193,21 @@
                                 </li>
                             </ul>
                         </nav>
-                        <i class="bi bi-x-circle"></i>
+                        <i class="bi bi-x-circle" id="close-sidebar"></i>
                     </div>
                     <div class="header-right">
                         <div class="header-right-links">
                             <a href="account.html" class="header-account">
                                 <i class="bi bi-person"></i>
                             </a>
-                            <button class="search-toggle">
+                            <button class="search-button">
                                 <i class="bi bi-search"></i>
                             </button>
                             <a href="#">
                                 <i class="bi bi-heart"></i>
                             </a>
                             <div class="header-cart">
-                                <a href="#" class="header-cart-link">
+                                <a href="cart.html" class="header-cart-link">
                                     <i class="bi bi-bag"></i>
                                     <span class="header-cart-count">0</span>
                                 </a>
@@ -236,30 +236,47 @@
                     <h3>RESULTS FROM PRODUCTS</h3>
                 </div>
                 <div class="results">
-                    <a href="#" class="result-item">
-                        <img src="img/products/product1/1.png" class="search-thumb" alt="">
-                        <div class="search-info">
-                            <h4>Analouge Resin Strap</h4>
-                            <span class="search-sku">SKU : PD0016</span>
-                            <span class="search-price">108.00 TL</span>
-                        </div>
-                    </a>
-                    <a href="#" class="result-item">
-                        <img src="img/products/product2/1.png" class="search-thumb" alt="">
-                        <div class="search-info">
-                            <h4>Analouge Resin Strap</h4>
-                            <span class="search-sku">SKU : PD0016</span>
-                            <span class="search-price">108.00 TL</span>
-                        </div>
-                    </a>
+
 
                 </div>
             </div>
-            <i class="bi bi-x-circle"></i>
+            <i class="bi bi-x-circle" id="close-search"></i>
         </div>
 
     </div>
     <!-- !modal search end -->
+
+    <!--! modal dialog start  -->
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button class="modal-close">
+                <i class="bi bi-x"></i>
+            </button>
+            <div class="modal-image">
+                <img src="img/modal-dialog.jpg" alt="">
+            </div>
+            <div class="popup-wrapper">
+                <div class="popup-content">
+                    <div class="popup-title">
+                        <h3>NEWSLETTER</h3>
+                    </div>
+                    <p class="popup-text">
+                        Sign up to our newsletter and get exclusive deals you won find any where else straight to your
+                        inbox!
+                    </p>
+                    <form class="popup-form">
+                        <input type="text" placeholder="Enter Email Address Here">
+                        <button class="btn btn-primary">SUBSCRIBE</button>
+                        <label>
+                            <input type="checkbox">
+                            <span>Don't show this popup again</span>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--! modal dialog end  -->
 
     <!-- ! single blog start -->
     <section class="single-blog">
@@ -575,7 +592,7 @@
                 <div class="footer-widgets">
                     <div class="brand-info">
                         <div class="footer-logo">
-                            <a href="#" class="logo">LOGO</a>
+                            <a href="index.html" class="logo">LOGO</a>
                         </div>
                         <div class="footer-desc">
                             <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus
@@ -705,7 +722,8 @@
 
     <!-- ! footer end-->
 
-    <!-- ! footer end-->
+    <script src="js/main.js" type="module"></script>
+
 </body>
 
 </html>

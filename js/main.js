@@ -31,14 +31,12 @@ const modalDialog = document.querySelector(".modal-dialog");
 const btnCloseDialog = document.querySelector(".modal-dialog .modal-close");
 const modalContentDOM = document.querySelector(".modal-dialog .modal-content");
 
-
-
 btnCloseDialog.addEventListener("click", function () {
   modalDialog.classList.remove("show");
 });
 
 document.addEventListener("click", (e) => {
-  if(!e.composedPath().includes(modalContentDOM)){
+  if (!e.composedPath().includes(modalContentDOM)) {
     modalDialog.classList.remove("show");
   }
 });

@@ -27,21 +27,21 @@ cartItems.innerHTML = localStorage.getItem("cart")
 //! add cartItem to localStorage end
 
 //! modal dialog start
-const modalDialog = document.querySelector(".modal-dialog");
-const btnCloseDialog = document.querySelector(".modal-dialog .modal-close");
+const modalDialogDOM = document.querySelector(".modal-dialog");
 const modalContentDOM = document.querySelector(".modal-dialog .modal-content");
+const btnCloseDialog = document.querySelector(".modal-dialog .modal-close");
 
 btnCloseDialog.addEventListener("click", function () {
-  modalDialog.classList.remove("show");
+  modalDialogDOM.classList.remove("show");
 });
 
 document.addEventListener("click", (e) => {
   if (!e.composedPath().includes(modalContentDOM)) {
-    modalDialog.classList.remove("show");
+    modalDialogDOM.classList.remove("show");
   }
 });
-setTimeout(() => {
-  modalDialog.classList.add("show");
-}, 2000);
 
+setTimeout(() => {
+  modalDialogDOM.classList.add("show");
+}, 3000);
 //! modal dialog end
